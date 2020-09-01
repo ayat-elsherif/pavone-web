@@ -1379,14 +1379,14 @@ Margin Right
     top: 0;
     width: 100%;
     z-index: -1;
-    background: #830a42;
-    background: -moz-linear-gradient(left, #830a42 0%, #502773 100%);
-    background: -webkit-gradient(left top, right top, color-stop(0%, #830a42), color-stop(100%, #502773));
-    background: -webkit-linear-gradient(left, #830a42 0%, #502773 100%);
-    background: -o-linear-gradient(left, #830a42 0%, #502773 100%);
-    background: -ms-linear-gradient(left, #830a42 0%, #502773 100%);
-    background: linear-gradient(to right, #830a42 0%, #502773 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$mainColorPink', endColorstr='#502773', GradientType=1);
+    background: $mainColorPink;
+    background: -moz-linear-gradient(left, $mainColorPink 0%, $mainColorPurple 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, $mainColorPink), color-stop(100%, $mainColorPurple));
+    background: -webkit-linear-gradient(left, $mainColorPink 0%, $mainColorPurple 100%);
+    background: -o-linear-gradient(left, $mainColorPink 0%, $mainColorPurple 100%);
+    background: -ms-linear-gradient(left, $mainColorPink 0%, $mainColorPurple 100%);
+    background: linear-gradient(to right, $mainColorPink 0%, $mainColorPurple 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$mainColorPink', endColorstr='$mainColorPurple', GradientType=1);
 }
 
 [class*='iq-over-']:before {
@@ -1613,14 +1613,14 @@ header.affix {
     -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
     -moz-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
     box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
-    background: #b00057;
-    background: -moz-linear-gradient(left, #b00057 0%, #723293 100%);
-    background: -webkit-gradient(left top, right top, color-stop(0%, #b00057), color-stop(100%, #723293));
-    background: -webkit-linear-gradient(left, #b00057 0%, #723293 100%);
-    background: -o-linear-gradient(left, #b00057 0%, #723293 100%);
-    background: -ms-linear-gradient(left, #b00057 0%, #723293 100%);
-    background: linear-gradient(to right, #b00057 0%, #723293 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#b00057', endColorstr='#723293', GradientType=1);
+    background: #830a42;
+    background: -moz-linear-gradient(left, #830a42 0%, #502773 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, #830a42), color-stop(100%, #502773));
+    background: -webkit-linear-gradient(left, #830a42 0%, #502773 100%);
+    background: -o-linear-gradient(left, #830a42 0%, #502773 100%);
+    background: -ms-linear-gradient(left, #830a42 0%, #502773 100%);
+    background: linear-gradient(to right, #830a42 0%, #502773 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#830a42', endColorstr='#502773', GradientType=1);
 }
 
 header.affix .navbar-header .navbar-brand img {
@@ -1653,26 +1653,25 @@ header.affix .navbar-nav {
     color: #fff;
     font-family: 'Raleway', sans-serif;
     margin: 16% 0 8%;
+    h1 {
+        font-size: 90px;
+        line-height: 110px;
+        margin-bottom: 30px;
+        text-shadow: 0px 20px 10px rgba(0, 0, 0, 0.1);
+        margin-top: 15%;
+        letter-spacing: 2px;
+        small {
+            font-size: 18px;
+            display: block;
+            text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1);
+        }
+    }
 }
 
 .img-one {
     width: 80%;
 }
 
-.banner-text h1 {
-    font-size: 100px;
-    line-height: 120px;
-    margin-bottom: 30px;
-    text-shadow: 0px 20px 10px rgba(0, 0, 0, 0.1);
-    margin-top: 15%;
-    letter-spacing: 2px;
-}
-
-.banner-text h1 small {
-    font-size: 18px;
-    display: block;
-    text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1);
-}
 
 .banner-text .link h5 {
     margin-bottom: 20px;
