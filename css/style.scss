@@ -1299,6 +1299,10 @@ Margin Right
 .iq-font-light {
     color: #666666;
 }
+.iq-font-lightPink{
+    color:#f089cc;
+    // color:#f6a4d9;
+}
 
 /*---------------------------------------------------------------------
                           Background Color 
@@ -1362,12 +1366,12 @@ Margin Right
     width: 100%;
     z-index: -1;
     background: $mainColorPink;
-    background: -moz-linear-gradient(left, $mainColorPink 0%, $mainColorPurple 100%);
-    background: -webkit-gradient(left top, right top, color-stop(0%, $mainColorPink), color-stop(100%, $mainColorPurple));
+    background: -moz-linear-gradient(left, $mainColorPink+cc 0%, $mainColorPurple+cc 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, $mainColorPink+cc), color-stop(100%, $mainColorPurple+cc));
     background: -webkit-linear-gradient(left, $mainColorPink 0%, $mainColorPurple 100%);
-    background: -o-linear-gradient(left, $mainColorPink 0%, $mainColorPurple 100%);
-    background: -ms-linear-gradient(left, $mainColorPink 0%, $mainColorPurple 100%);
-    background: linear-gradient(to right, $mainColorPink 0%, $mainColorPurple 100%);
+    background: -o-linear-gradient(left, $mainColorPink+cc 0%, $mainColorPurple+cc 100%);
+    background: -ms-linear-gradient(left, $mainColorPink+cc 0%, $mainColorPurple+cc 100%);
+    background: linear-gradient(to right, $mainColorPink+cc 0%, $mainColorPurple+cc 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$mainColorPink', endColorstr='$mainColorPurple', GradientType=1);
 }
 
@@ -1743,73 +1747,76 @@ header.affix .navbar-nav {
     position: relative;
     padding: 40px 30px;
     overflow: hidden;
+    text-align: center;
     -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
     -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
     box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+    &::before {
+        position: absolute;
+        content: "";
+        left: -80px;
+        top: 0;
+        height: 2px;
+        width: 70px;
+        transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        -ms-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+        -webkit-transition: all 0.5s ease-in-out;
+        background: $mainColorPink;
+        background: -moz-linear-gradient(left, $mainColorPink 0%, $mainColorPurple 100%);
+        background: -webkit-gradient(left top, right top, color-stop(0%, $mainColorPink), color-stop(100%, $mainColorPurple));
+        background: -webkit-linear-gradient(left, $mainColorPink 0%, $mainColorPurple 100%);
+        background: -o-linear-gradient(left, $mainColorPink 0%, $mainColorPurple 100%);
+        background: -ms-linear-gradient(left, $mainColorPink 0%, $mainColorPurple 100%);
+        background: linear-gradient(to right, $mainColorPink 0%, $mainColorPurple 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$mainColorPink', endColorstr='$mainColorPurple', GradientType=1);
+    }
+    &::after {
+        position: absolute;
+        content: "";
+        right: -80px;
+        bottom: 0;
+        height: 2px;
+        width: 70px;
+        transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        -ms-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+        -webkit-transition: all 0.5s ease-in-out;
+        background: $mainColorPink;
+        background: -moz-linear-gradient(left, $mainColorPink 0%, $mainColorPurple 100%);
+        background: -webkit-gradient(left top, right top, color-stop(0%, $mainColorPink), color-stop(100%, $mainColorPurple));
+        background: -webkit-linear-gradient(left, $mainColorPink 0%, $mainColorPurple 100%);
+        background: -o-linear-gradient(left, $mainColorPink 0%, $mainColorPurple 100%);
+        background: -ms-linear-gradient(left, $mainColorPink 0%, $mainColorPurple 100%);
+        background: linear-gradient(to right, $mainColorPink 0%, $mainColorPurple 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$mainColorPink', endColorstr='$mainColorPurple', GradientType=1);
+    }
+    i {
+        font-size: 60px;
+        color:$mainColorPink;
+        transition: all .35s ease-in-out;    
+    }
+    h4 {
+        margin: 30px 0 15px;
+        line-height: 32px;
+    }
+    &:hover{
+        &:before {
+            left: 0;
+        }
+        :after {
+            right: 0;
+        }
+        i{
+            color:$mainColorPurple;
+        }
+    }
 }
 
-.iq-fancy-box:before {
-    position: absolute;
-    content: "";
-    left: -80px;
-    top: 0;
-    height: 2px;
-    width: 70px;
-    transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -ms-transition: all 0.5s ease-in-out;
-    -o-transition: all 0.5s ease-in-out;
-    -webkit-transition: all 0.5s ease-in-out;
-    background: $mainColorPink;
-    background: -moz-linear-gradient(left, $mainColorPink 0%, $mainColorPurple 100%);
-    background: -webkit-gradient(left top, right top, color-stop(0%, $mainColorPink), color-stop(100%, $mainColorPurple));
-    background: -webkit-linear-gradient(left, $mainColorPink 0%, $mainColorPurple 100%);
-    background: -o-linear-gradient(left, $mainColorPink 0%, $mainColorPurple 100%);
-    background: -ms-linear-gradient(left, $mainColorPink 0%, $mainColorPurple 100%);
-    background: linear-gradient(to right, $mainColorPink 0%, $mainColorPurple 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$mainColorPink', endColorstr='$mainColorPurple', GradientType=1);
-}
-
-.iq-fancy-box:after {
-    position: absolute;
-    content: "";
-    right: -80px;
-    bottom: 0;
-    height: 2px;
-    width: 70px;
-    transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -ms-transition: all 0.5s ease-in-out;
-    -o-transition: all 0.5s ease-in-out;
-    -webkit-transition: all 0.5s ease-in-out;
-    background: $mainColorPink;
-    background: -moz-linear-gradient(left, $mainColorPink 0%, $mainColorPurple 100%);
-    background: -webkit-gradient(left top, right top, color-stop(0%, $mainColorPink), color-stop(100%, $mainColorPurple));
-    background: -webkit-linear-gradient(left, $mainColorPink 0%, $mainColorPurple 100%);
-    background: -o-linear-gradient(left, $mainColorPink 0%, $mainColorPurple 100%);
-    background: -ms-linear-gradient(left, $mainColorPink 0%, $mainColorPurple 100%);
-    background: linear-gradient(to right, $mainColorPink 0%, $mainColorPurple 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$mainColorPink', endColorstr='$mainColorPurple', GradientType=1);
-}
-
-.iq-fancy-box i {
-    font-size: 60px;
-}
-
-.iq-fancy-box h4 {
-    margin: 30px 0 15px;
-}
-
-/* fancy box Hover */
-.iq-fancy-box:hover:before {
-    left: 0;
-}
-
-.iq-fancy-box:hover:after {
-    right: 0;
-}
 
 /*---------------------------------------------------------------------
                             About us
